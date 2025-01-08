@@ -17,9 +17,9 @@ const HomePage = () => {
 
 
     return (
-        <Layout >
+        <Layout><p> this is</p>
             {
-             list===null?<Loder/>: <Bloglist list={list}/>
+                list === null ? <Loder/> : <Bloglist list={list}/>
             }
         </Layout>
     );

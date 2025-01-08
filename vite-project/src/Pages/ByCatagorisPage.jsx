@@ -22,6 +22,7 @@ const ByCategoryPage = () => {
 
     return (
         <Layout>
+
             {
                 list===null?<Loder/>: <Bloglist list={list}/>
             }

@@ -5,7 +5,7 @@ import ByCatagorisPage from "./Pages/ByCatagorisPage.jsx";
 import DetailsPage from "./Pages/DetailsPage.jsx";
 const App = () => {
     return (
-        <div className={'bg-gray-400'}>
+        <div className={'bg-white'}>
            <BrowserRouter>
                <Routes>
                    <Route path={'/'} element={<HomePage/>}/>
