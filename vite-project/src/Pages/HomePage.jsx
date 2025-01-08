@@ -9,12 +9,13 @@ const HomePage = () => {
     const [list,setList]=useState(null);
 
     useEffect(()=>{
-
         (async ()=>{
             let res=await postLatest()
             setList(res)
         })()
     },[])
+
+
     return (
         <Layout >
             {

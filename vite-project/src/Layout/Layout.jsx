@@ -38,8 +38,8 @@ const Layout = (props) => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><NavLink to={'/'}>Home</NavLink></li>
                             {
-                                categoris.map((item, i)=>{
-                                return  <li><NavLink to={'/ByCatagoris/'+item['id']}>{item["name"]}</NavLink></li>
+                                categoris.map((item, index)=>{
+                                return  <li key={index.toString()}><NavLink to={'/byCategory/'+item['id']}>{item["name"]}</NavLink></li>
 
                             })
                             }
@@ -47,14 +47,14 @@ const Layout = (props) => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl">myBlog</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><NavLink to={'/'}>Home</NavLink></li>
                         {
-                            categoris.map((item, i) => {
-                                return <li><NavLink to={'/ByCatagoris/' + item['id']}>{item["name"]}</NavLink></li>
+                            categoris.map((item, index) => {
+                                return <li key={index.toString()}><NavLink to={'/byCategory/' + item['id']}>{item["name"]}</NavLink></li>
                             })
                         }
 

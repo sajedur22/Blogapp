@@ -19,3 +19,13 @@ export async function postLatest(){
         return []
     }
 }
+
+
+export async function postBycetegori(id){
+    let res=await axios.get(BaseURL+'/post-list/'+id);
+    if(res.status===200){
+        return res.data;
+    }else{
+        return []
+    }
+}
